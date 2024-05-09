@@ -16,10 +16,36 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $products = config('products');
-    $menu = config('menues');
     $hicon = config('hicon');
     $info = config('info');
     $social = config('social');
 
-    return view('home', compact('products','menu','hicon','info','social'));
+    return view('home', compact('products','hicon','info','social'));
 })->name('home');
+
+Route::get('/woman', function () {
+
+    $hicon = config('hicon');
+    $info = config('info');
+    $social = config('social');
+
+    return view('woman', compact('hicon','info','social'));
+})->name('woman');
+
+Route::get('/man', function () {
+
+    $hicon = config('hicon');
+    $info = config('info');
+    $social = config('social');
+
+    return view('man', compact('hicon','info','social'));
+})->name('man');
+
+Route::get('/kid', function () {
+
+    $hicon = config('hicon');
+    $info = config('info');
+    $social = config('social');
+
+    return view('kid', compact('hicon','info','social'));
+})->name('kid');
