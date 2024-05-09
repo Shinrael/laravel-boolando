@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $products = config('products');
+    $menu = config('menues');
+    $hicon = config('hicon');
 
-    return view('home', compact('products'));
+    return view('home', compact('products','menu','hicon'));
 })->name('home');
