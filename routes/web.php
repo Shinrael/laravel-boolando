@@ -18,6 +18,8 @@ Route::get('/', function () {
     $products = config('products');
     $menu = config('menues');
     $hicon = config('hicon');
+    $info = config('info');
+    $social = config('social');
 
-    return view('home', compact('products','menu','hicon'));
+    return view('home', compact('products','menu','hicon','info','social'));
 })->name('home');
