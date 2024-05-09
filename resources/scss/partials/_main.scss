@@ -1,0 +1,85 @@
+main{
+    height: 100%;
+    .container{
+      width: 80%;
+      max-width: 1000 px;
+      margin: 40px auto;
+    }
+    .product{
+        margin: 0px 6px 25px;
+        position: relative;
+        width: 32%;
+        height: 520px;
+        cursor: pointer;
+        &:hover{
+          .image-one{
+            display: none;
+          }
+          .image-two{
+            display: block;
+          }
+        }
+        .image-two{
+          display: none;
+        }
+        img{
+          width: 100%;
+          height: auto;
+        }
+        .product-text{
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background-color: white;
+          border: 1px solid black;
+          width: 180px;
+          .price-now{
+            color: red;
+          }
+          .first-price{
+            text-decoration: line-through;
+          }
+        }
+        .discount{
+          position: absolute;
+          bottom: 150px;
+          left: 0;
+          color: white;
+          padding: 4px 9px;
+          background-color: red;
+        }
+        .discount-light{
+          position: absolute;
+          bottom: 150px;
+          left: 0;
+          color: white;
+          padding: 4px 9px;
+          background-color: red;
+        }
+        .green{
+          position: absolute;
+          bottom: 150px;
+          left: 56px;
+          color: white;
+          padding: 4px 9px;
+          background-color: #008000;
+        }
+        .green-alt{
+          position: absolute;
+          bottom: 150px;
+          left: 0;
+        }
+        .heart{
+          position:absolute;
+          top: 5px;
+          right:0px;
+          padding: 12px 12px;
+          background-color: white;
+          size: 1px;
+          &:hover{
+            color: red;
+          }
+        }
+
+      }
+  }
